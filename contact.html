@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link
+    rel="stylesheet">
+<script src="https://kit.fontawesome.com/a56a36e61b.js" crossorigin="anonymous"></script>
+
+    <title>contact</title>
+</head>
+<body>
+    <nav>
+        <ul class="sidemenu">
+            <li onclick=hidesidemenu()><a href="#"><img src="close.png" alt="" width="30px"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Estiak</a></li>
+            <li class="hideOnmobile"><a href="index.html">Home</a></li>
+            <li class="hideOnmobile"><a href="contact.html">Contact</a></li>
+            <li class="hideOnmobile"><a href="about.html">About</a></li>
+            <li class="menubtn" onclick=showsidemenu()><a href="#"><img src="menu.png" alt="" width="30px"></a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="contact-h">
+            <center>
+                <h1>Contact</h1>
+            </center>
+        </div>
+    </section>
+    <section class="form-section">
+        <div class="contact-form">
+            <form class="form-fill">
+                <label for="fname">Name:</label><br>
+                <input type="text" id="fn" name="fname" placeholder="Your Name"><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="em" name="email" placeholder="Email"><br><br>
+                <label for="say">Say Something</label><br>
+                <textarea name="say" id="ss"></textarea>
+                <p>Contact For</p>
+                <input type="radio" id="project" name="selection" value="Project">
+                <label for="project">Project</label>
+                <input type="radio" id="sponsorship" name="selection" value="Sponsorship">
+                <label for="sponsorship">Collabration</label>
+                <input type="radio" id="both" name="selection" value="Both">
+                <label for="both">Both</label><br><br>
+                <input type="submit" id="submit" value="Submit"><br><br>
+            </form>
+        </div>
+        <br><br>
+        <div class="contact-personal">
+            <img src="handshake.png" alt="image">
+            <h4>Estiak</h4>
+            <h5>Full time youtuber and freelancher</h5>
+            <p>So are you hire me for your project or offer me sponsorship now contact</p>
+        </div><br>
+    </section>
+    <br>
+    <section>
+
+        <footer class="footer_main_container">
+            <div class="footer_heading">
+                <h4>Let's connect !</h4>
+            </div>
+            <div class="footer_icon">
+                <ul>
+                    <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+                <p>© Estiak Ahmed 2023-2030</p>
+            </div>
+        </footer>
+    </section>
+    <script>
+        function showsidemenu() {
+            const sidemenu = document.querySelector('.sidemenu')
+            sidemenu.style.display = 'flex'
+        }
+
+        function hidesidemenu() {
+            const sidemenu = document.querySelector('.sidemenu')
+            sidemenu.style.display = 'none'
+        }
+    </script>
+    
+</body>
+</html>

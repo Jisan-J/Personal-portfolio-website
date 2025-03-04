@@ -1,0 +1,224 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --clr-text: #dbd8e3;
+    --clr-3thbg:#5c5470; 
+    --clr-2ndbg:#211c2c; 
+    --clr-1stbg:#0b0811;
+    --clr-text2:rgb(237, 165, 49);
+}
+
+body{
+    background: var(--clr-2ndbg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav{
+    margin-right: 20px;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content:flex-end ;
+    align-items: center;
+
+}
+nav li{
+    height: 50px;
+    margin: 5px 10px; 
+}
+nav ul li a{
+    text-decoration: none;
+    color:var(--clr-text);
+    font-size: 16px;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    color: var(--clr-text2);
+}
+nav li:first-child{
+    margin-right:auto;
+}
+nav li:first-child a{
+    color: var(--clr-text2);
+    font-size: 22px;
+
+}
+
+
+.sidemenu{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    height: 96vh;
+    width: 250px;
+    border-radius: 20px;
+    z-index: 999;
+    background-color: var(--clr-3thbg);
+    box-shadow:-10px 0 10px rgba(0, 0, 0, 0.2) ;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: 0.5s;
+
+}
+.sidemenu li{
+    width: 100%;
+}
+.sidemenu a{
+    padding: 10px 20px;
+
+}
+.menubtn{
+    display: none;
+}
+@media(max-width:700px){
+    .hideOnmobile{
+        display: none;
+    }
+    .menubtn{
+        display: block;
+    }
+}
+@media(max-width:400px){
+    .sidemenu{
+        width: 100%;
+    }
+}
+
+
+
+.about_heading{
+    /* background: #cccccc; */
+    display: flex;
+    width: 60%;
+    height: 230px;
+    align-items: center;
+    margin: 0 auto;
+    /* border-radius: 10px; */
+    /* border-bottom: 2px solid rgb(255, 166, 0); */
+    overflow: hidden;
+}
+
+.about_heading .about_image > img{
+    width: 120px;
+    border-radius: 100%;
+    margin-left: 26px;
+}
+.about_heading .lets-talk > h2 {
+    color: var(--clr-text);
+    font-size: clamp(20px, 4vw, 60px);
+    margin-left: 40px;
+    border-bottom: 5px solid rgb(255, 166, 0);
+
+}
+
+.about_material{
+    background: var(--clr-3thbg);
+    color: var(--clr-text);
+    width: 70%;
+    height:fit-content;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.about_material .about_text  p{
+    font-size: clamp(4px, 2vw, 14px);
+
+}
+.education .about_text > h4{
+    color:rgb(99, 178, 183) ;
+    padding: 20px 0 0 20px;
+    font-size: 26px;
+    font-weight: 700;
+}
+.education .about_text > p{
+    padding: 30px;
+    vertical-align: middle;
+}
+.about_container .about_material .about_text > p{
+    padding: 30px;
+    vertical-align: middle;
+}
+.about_container .about_material .about_text > h4{
+    padding: 20px 0 0 20px;
+    font-size: 26px;
+    font-weight: 700;
+    
+}
+.youtube mark {
+    color: rgb(245, 68, 68);
+    background: none;
+}
+
+.about_container .youtube .about_text > h4{
+    color: rgb(39, 39, 39);
+}
+.about_container .marketplace .about_text > h4{
+    color: rgb(4, 208, 58);
+}
+.about_container .buissness .about_text > h4{
+    color: rgb(238, 179, 96);
+}
+
+
+
+
+
+
+
+
+
+/* footer bg style */
+.footer_main_container {
+    border-radius: 10px;
+    text-align: center;
+}
+.footer_main_container .footer_heading{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+.footer_main_container .footer_icon ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+/* footer social media text style */
+.footer_main_container .footer_heading > h4 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: var(--clr-text);
+}
+
+/* footer icon style & display property fix */
+.footer_main_container .footer_icon ul li {
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 30px;
+}
+.footer_main_container .footer_icon ul li a{
+    color:var(--clr-3thbg);
+}
+/* footer social media icon 
+    forground color & vertically center */
+.footer_main_container.footer_icon li i {
+    color: var(--clr-3thbg);
+    transition: 0.2s;
+}
+
+.footer_main_container .footer_icon li .fa-brands:hover {
+    color: rgb(255, 56, 56);
+}
+
+.footer_main_container .footer_icon p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #5d5d5d;
+}
+/*

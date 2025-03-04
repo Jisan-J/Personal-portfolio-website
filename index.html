@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link
+    rel="stylesheet">
+<script src="https://kit.fontawesome.com/a56a36e61b.js" crossorigin="anonymous"></script>
+
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="hero-section">
+        <nav>
+            <ul class="sidemenu">
+                <li onclick=hidesidemenu()><a href="#"><img src="close.png" alt="" width="30px"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html">Estiak</a></li>
+                <li class="hideOnmobile"><a href="index.html">Home</a></li>
+                <li class="hideOnmobile"><a href="contact.html">Contact</a></li>
+                <li class="hideOnmobile"><a href="about.html">About</a></li>
+                <li class="menubtn" onclick=showsidemenu()><a href="#"><img src="menu.png" alt="" width="30px"></a></li>
+            </ul>
+        </nav>
+        <div class="hero-in-el">
+            <div class="heroImg"><img src="hero.png" alt="" width="500px"></div>
+            <div class="heroheding">
+                <h2>Hi I'm Estiak</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, deserunt.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="intro_duction">
+        <div class="intro_container">
+            <div><img src="personal.jpg" alt="image"></div>
+            <div class="pra">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique minus ipsam iure recusandae qui
+                    voluptatibus ratione dolor sequi harum itaque nostrum ea nihil nulla, rem tempore alias perferendis
+                    temporibus eveniet, quis vero magnam id. Perferendis, pariatur exercitationem. Maxime, mollitia
+                    corrupti? Sapiente nihil iste voluptate placeat possimus sequi quia maiores consequuntur, ducimus,
+                    laboriosam vero consequatur nostrum, incidunt ratione minus recusandae nisi. Sed nesciunt accusamus
+                    corporis possimus sunt ipsum magnam totam tenetur repellendus veniam, in molestiae vel consequuntur
+                    labore quia id temporibus dolorem tempora? Amet tenetur consequatur cumque beatae. Perspiciatis
+                    corrupti
+                    natus eligendi optio dicta ea consectetur quasi! Necessitatibus fuga eos vitae.</p>
+            </div>
+        </div>
+    </section>
+    <section class="skills_section">
+        <div class="service_header">
+            <h2>MY SERVICE</h2>
+        </div>
+        <div class="service_container">
+            <div class="service_name">
+                <h3>Video Editing</h3>
+                <img src="video Editor.png" alt="image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum aut quibusdam saepe
+                    doloremque
+                    rerum unde dolores labore illum id?
+                </p><br>
+            </div>
+            <div class="service_name">
+                <h3>Web Developer</h3>
+                <img src="Web dev.png" alt="image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum aut quibusdam saepe
+                    doloremque
+                    rerum unde dolores labore illum id?
+                </p><br>
+            </div>
+            <div class="service_name">
+                <h3>Collaboration</h3>
+                <img src="Collaboration.png" alt="image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum aut quibusdam saepe
+                    doloremque
+                    rerum unde dolores labore illum id?
+                </p><br>
+            </div>
+        </div><br><br>
+       
+    <section>
+
+        <footer class="footer_main_container">
+            <div class="footer_heading">
+                <h4>Let's connect !</h4>
+            </div>
+            <div class="footer_icon">
+                <ul>
+                    <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+                <p>© Estiak Ahmed 2023-2030</p>
+            </div>
+        </footer>
+    </section>
+    <script>
+        function showsidemenu() {
+            const sidemenu = document.querySelector('.sidemenu')
+            sidemenu.style.display = 'flex'
+        }
+
+        function hidesidemenu() {
+            const sidemenu = document.querySelector('.sidemenu')
+            sidemenu.style.display = 'none'
+        }
+    </script>
+
+</body>
+
+</html>
