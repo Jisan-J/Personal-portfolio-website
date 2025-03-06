@@ -9,8 +9,15 @@
     --clr-2ndbg:#211c2c; 
     --clr-1stbg:#0b0811;
     --clr-text2:rgb(237, 165, 49);
-}
+    --clr-selc:#211c2c; 
+    --clr-selbg:rgb(78, 128, 127);
 
+
+}
+::selection {
+    color: var(--clr-selc);
+    background: var(--clr-selbg);
+  }
 body{
     background: var(--clr-2ndbg);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -169,7 +176,12 @@ nav li:first-child a{
 
 
 
-
+@media (max-width: 600px){
+    .about_heading{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
 
@@ -212,7 +224,7 @@ nav li:first-child a{
 }
 
 .footer_main_container .footer_icon li .fa-brands:hover {
-    color: rgb(255, 56, 56);
+    color: var(--clr-text2);
 }
 
 .footer_main_container .footer_icon p {

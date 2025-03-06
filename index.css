@@ -10,7 +10,12 @@
     --clr-1stbg:#0b0811;
     --clr-text2:rgb(237, 165, 49);
     --clr-text3:#5e5e5e;
+    --clr-text4:rgb(78, 128, 127);
 }
+::selection {
+    color: var(--clr-2ndbg);
+    background: var(--clr-text4);
+  }
 
 body{
     background: var(--clr-1stbg);
@@ -96,8 +101,12 @@ nav li:first-child a{
     height: 500px;
     position: relative;
 }
+
+/* hero section photo and heading style  */
 .hero-in-el{
     display: flex;
+    justify-content: space-around;
+    
  
 
     
@@ -107,7 +116,7 @@ nav li:first-child a{
  align-items: center;
 }
 .hero-in-el .heroheding{
-    transform: translateY(100px);
+    transform: translateY(140px);
 }
 .hero-in-el .heroheding > h2{
     color: var(--clr-text);
@@ -118,6 +127,35 @@ nav li:first-child a{
     font-size: 14px;
     color: var(--clr-text2);
 }
+
+.hero_icon ul{
+    display: flex;
+    list-style: none;
+}
+.hero_icon ul li {
+    margin: 10px 8px;
+    font-size: 30px;
+}
+.hero_icon ul li i{
+    color: var(--clr-text);
+    transition: 0.5s ease-in-out;
+}
+.hero_icon ul li:hover i{
+    color: var(--clr-text4);
+
+}
+/* hero  section link icon hover down effect style   */
+.hero_icon i:hover.fa-envelope{ 
+    padding-top: 10px;
+}
+.hero_icon i:hover.fa-whatsapp{ 
+    padding-top: 10px;
+}
+.hero_icon i:hover.fa-github{ 
+    padding-top: 10px;
+}
+/* herp section icon down effect end  */
+
 
 @media(max-width:700px){
 
@@ -132,10 +170,12 @@ nav li:first-child a{
 }
 
 
-
+/* This part of below the hero section  */
 .intro_duction {
     background: var(--clr-2thbg);
     padding: 60px 0px;
+    color: var(--clr-text);
+    
 
 }
 
@@ -151,11 +191,12 @@ nav li:first-child a{
 
 }
 
-.intro_container img {
+.intro_container .in-img> img {
     padding: 20px;
     /* margin-left: 14%; */
     width: 200px;
     /* float: left; */
+    border-radius: 40px;
 }
 
 .intro_container .pra {
@@ -164,7 +205,7 @@ nav li:first-child a{
 }
 
 .intro_container .pra {
-    font-size: clamp(4px, 1.5vw, 16px);
+    font-size: clamp(4px, 2vw, 16px);
 
 }
 
@@ -181,8 +222,6 @@ nav li:first-child a{
     padding: 0;
     display: flex;
     justify-content: space-around;
-    padding-left: 10%;
-    padding-right: 10%;
     align-items: center;
     transition: 1.2s;
 
@@ -199,39 +238,50 @@ nav li:first-child a{
     font-size: clamp(20px, 2.5vw, 34px);
     margin: 0;
     padding: 22px;
-    color: var(--clr-text3);
+    color: var(--clr-text4);
 }
 
-.service_container .service_name {
+/* There are three services and it is the design of the service */
+.service_container .service-element {
     background: var(--clr-3thbg);
     color: var(--clr-text);
     margin: 10px;
     border-radius: 10px;
     text-align: center;
-    height: 340px;
-    max-width: 280px;
+    height: 320px;
+    max-width: 380px;
     transition: 0.5s ease-in-out;
 }
 
-.service_container .service_name>h3 {
+.service_container .service-element > h3 {
     background: var(--clr-2ndbg);
-    color: white;
+    color: var(--clr-text);
     font-size: clamp(16px, 1.6vw, 24px);
     margin-top: 0;
     padding: 20px;
     border-radius: 10px 10px 0 0;
 }
+.service_container .photo > h3{
+    font-size: clamp(14px, 1.5vw, 24px);
 
-.service_container .service_name p {
+}
+
+.service_container .service-element > p {
     font-size: clamp(5px, 1.5vw, 14px);
+    transform: translateY(30px);
+
 }
 
-.service_container .service_name img {
+.service_container .service-element img {
     height: 50px;
+    
+}
+.service_container .photo > img{
+    height: 80px;
 
 }
 
-.service_container .service_name:hover {
+.service_container .service-element:hover {
     margin-bottom: 50px;
     box-shadow: rgba(0, 0, 0, 0.367) 2px 4px 0px;
 
@@ -242,11 +292,12 @@ nav li:first-child a{
 
     /* Hero part model photo */
     .header img {
-        width: 360px;
+        width: 300px;
         /* position: absolute; */
         top: 40px;
         right: 10px;
     }
+   
 
     /* Hero section below heading & slogan positioning */
 
@@ -264,20 +315,43 @@ nav li:first-child a{
 
     .intro_container img {
         padding: 20px;
-        width: 140px;
+        width: 200px;
     }
 
 }
 @media (max-width: 890px){
-    .service_container .service_name {
-        height: 280px;
+    .service_container .service-element {
+        height: 260px;
 
+    }
+    .service_container.service-element{
+        max-width: 200px;
+        height: 200px;
     }
 }
 @media (max-width: 670px) {
-
-    /* Navbar login and create button style start */
-    /* menu logo enable for small display */
+    .hero-in-el{
+        display: flex;
+        flex-direction: column;
+        /* top: 0; */
+        position: relative;
+        justify-self: center;
+    }
+    .hero-in-el .heroheding{
+        position: absolute;
+        top: 120px;
+        /* left: 100px; */
+    }
+    .hero-in-el .heroImg{
+        /* position: absolute; */
+        transform: translateY(-160px);
+    }
+    .hero-in-el .heroImg img{
+        width: 330px;
+    }
+    .intro_container .in-img > img{
+        border-radius: 40px;
+    }
     .service_container {
         margin: 0;
         padding: 0;
@@ -287,24 +361,46 @@ nav li:first-child a{
         padding-right: 10%;
         align-items: center;
     }
-
-    .service_container .service_name p {
+    .service-element{
+        width: 200px;
+        height: 60px;
+    }
+    .service_container .service-element p {
         font-size: clamp(10px, 2vw, 20px);
+
     }
 
-    .service_container .service_name img {
+    .service_container .service-element img {
         height: 50px;
 
     }
 
-    .service_container .service_name:hover {
+    .service_container .service-element:hover {
         margin-bottom: 10px;
         color: none;
         box-shadow: none;
 
     }
-    .service_container .service_name {
-        height: 300px;
+    
+}
+@media (max-width: 450px){
+    .intro_container{
+display: flex;    }
+    /* .in-img {
+    } */
+    .in-img > img{
+        width: 100px !important;
+    }
+    .pra{
+        width: 100%;
+        /* transform: translateX(80px); */
+        font-size: 50px;
+    }
+    .pra > p{
+        font-size: 10px;
+        display: block;
+        justify-content: center;
+
 
     }
 }
@@ -347,7 +443,7 @@ nav li:first-child a{
 }
 
 .footer_main_container .footer_icon li .fa-brands:hover {
-    color: rgb(255, 56, 56);
+    color: var(--clr-text2);
 }
 
 .footer_main_container .footer_icon p {
