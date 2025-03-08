@@ -6,20 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a56a36e61b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Home</title>
+    <title>Estiak</title>
 </head>
 
 <body>
+
+    <!-- ===Header plus Hero section === -->
     <div class="hero-section">
+        <!-- ===  Navbar === -->
+
         <nav>
+            <!-- === Sidebar Navgation menu === -->
             <ul class="sidemenu">
                 <li onclick=hidesidemenu()><a href="#"><img src="close.png" alt="" width="30px"></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
+            <!-- === Sidebar Navgation menu End === -->
+
+            <!-- === Desktop Navgation menu === -->
             <ul>
                 <li><a href="index.html">Estiak</a></li>
                 <li class="hideOnmobile"><a href="index.html">Home</a></li>
@@ -27,7 +37,11 @@
                 <li class="hideOnmobile"><a href="about.html">About</a></li>
                 <li class="menubtn" onclick=showsidemenu()><a href="#"><img src="menu.png" alt="" width="30px"></a></li>
             </ul>
+            <!-- === Desktop Navgation menu End === -->
         </nav>
+        <!-- ===  Navbar End === -->
+
+        <!-- === Hero section === -->
         <div class="hero-in-el">
             <div class="heroImg"><img src="hero2.png" alt="" width="500px"></div>
             <div class="heroheding">
@@ -47,9 +61,61 @@
 
             </div>
         </div>
+        <!-- === Hero section End === -->
+
     </div>
+    <!-- ===Header plus Hero section End === -->
 
 
+    <!-- Services  section -->
+    <section class="services-area">
+        <div class="service-container">
+            <div class="service-heading">
+                <h2>What services will <br>we provide you?</h2>
+                <p>We are here for UMKM in Indonesia <br>to carry out the legalization process,<br> which is sometimes
+                    complicated.
+                </p>
+            </div>
+        </div>
+        <div class="services">
+            <div class="service service-1">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>MERN Stack Developent</h3>
+                <p>Environmental legal issues might occur since the planned business activities are designed</p>
+
+            </div>
+            <div class="service service-2">
+                <i class="fa-brands fa-wordpress"></i>
+                <h3>Wordpress Development</h3>
+                <p>We provide a complete range of services for the continuity of your business activities.</p>
+            </div>
+            <div class="service service-3">
+                <i class="fa-solid fa-camera"></i>
+                <h3>Product Photography</h3>
+                <p>IT not followed by the existing regulation which might cause legal uncertainty and business
+                    uncertainty.</p>
+
+            </div>
+            <div class="service service-4">
+                <i class="fa-brands fa-figma"></i>
+                <h3>Figma Designer</h3>
+                <p>In dealing with disruptive economic and legal challenge, our firm also provide various legal
+                    services.</p>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Services  section End -->
+
+
+<!-- Be more thing this area  -->
+
+
+
+
+
+    <!-- === Self Indtroduction Section === -->
     <section class="intro_duction">
         <div class="intro_container">
             <div class="in-img"><img src="in.jpg" alt="image"></div>
@@ -63,41 +129,11 @@
             </div>
         </div>
     </section>
-    <section class="skills_section">
-        <div class="service_header">
-            <h2>MY SERVICE</h2>
-        </div>
-        <div class="service_container">
-            <div class="service-element photo">
-                <h3>Photography/ Videography</h3>
-                <img src="https://cdn-icons-png.flaticon.com/256/6064/6064950.png" alt="image">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum aut quibusdam saepe
-                    doloremque
-                    rerum unde dolores labore illum id?
-                </p><br>
-            </div>
-            <div class="service-element web">
-                <h3>Web Development</h3>
-                <img src="Web dev.png" alt="image">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum aut quibusdam saepe
-                    doloremque
-                    rerum unde dolores labore illum id?
-                </p><br>
-            </div>
-            <div class="service-element coll">
-                <h3>Collaboration</h3>
-                <img src="Collaboration.png" alt="image">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum aut quibusdam saepe
-                    doloremque
-                    rerum unde dolores labore illum id?
-                </p><br>
-            </div>
-        </div><br>
-    </section>
-    <section class="photography">
+    <!-- === Self Indtroduction Section === -->
 
 
-    </section>
+
+    <!-- === Footer Section === -->
     <section>
         <footer class="footer_main_container">
             <div class="footer_heading">
@@ -112,6 +148,11 @@
                 <p>© Estiak Ahmed 2023-2030</p>
             </div>
         </footer>
+        <!-- === Footer Section End === -->
+
+
+
+        <!-- === Javascript for Side Navbar === -->
     </section>
     <script>
         function showsidemenu() {
@@ -124,6 +165,7 @@
             sidemenu.style.display = 'none'
         }
     </script>
+     <!-- === Javascript for Side Navbar End === -->
 
 </body>
 
