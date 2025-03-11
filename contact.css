@@ -2,25 +2,27 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 :root{
-    --clr-text: #dbd8e3;
-    --clr-3thbg:#5c5470; 
-    --clr-2ndbg:#211c2c; 
-    --clr-1stbg:#0b0811;
-    --clr-text2:rgb(237, 165, 49);
-    --clr-text3:#5e5e5e;
-    --clr-text4:rgb(78, 128, 127);
-    --clr-selc:#211c2c; 
-    --clr-selbg:rgb(78, 128, 127);
+    --clr-1: #4e7a94;
+    --clr-2:#99adc0; 
+    --clr-3:#1c232c; 
+    --clr-4:#0f141c;
+    --clr-5: #ff4580;
+    --clr-6:#5e5e5e;
+    --clr-7:rgb(78, 128, 127);
+    --clr-8:#211c2c; 
+    --clr-8:rgb(78, 128, 127);
 
 }
 ::selection {
-    color: var(--clr-selc);
-    background: var(--clr-selbg);
+    color: var(--clr-3);
+    background: var(--clr-1);
   }
 body{
-    background: var(--clr-2ndbg);
+    background: var(--clr-4);
+    color: #99adc0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -33,6 +35,8 @@ nav ul{
     display: flex;
     justify-content:flex-end ;
     align-items: center;
+    padding: 16px;
+
 
 }
 nav li{
@@ -46,13 +50,13 @@ nav ul li a{
     transition: 0.5s;
 }
 nav ul li a:hover{
-    color: var(--clr-text2);
+    color: var(--clr-5);
 }
 nav li:first-child{
     margin-right:auto;
 }
 nav li:first-child a{
-    color: var(--clr-text2);
+    color: var(--clr-5);
     font-size: 22px;
 
 }
@@ -66,7 +70,7 @@ nav li:first-child a{
     width: 250px;
     border-radius: 20px;
     z-index: 999;
-    background-color: var(--clr-3thbg);
+    background: #070b10dc;
     box-shadow:-10px 0 10px rgba(0, 0, 0, 0.2) ;
     display: none;
     flex-direction: column;
@@ -110,14 +114,12 @@ nav li:first-child a{
 /* contact form heading contact text  */
 .contact-h h1 {
     font-size: clamp(30px, 4vw, 50px);
-    color: var(--clr-text4);
+    color: var(--clr-);
     margin: 20px;
 }
 
 /*Contact Form background style  */
 .form-section {
-    background: var(--clr-2ndbg);
-    color: var(--clr-text);
     border-radius: 5px;
     height: auto;
     width: auto;
@@ -128,7 +130,7 @@ nav li:first-child a{
 /* Contact Form text style and
  text box  adjust */
 .form-fill input, textarea{
-    background: var(--clr-3thbg);
+    background: var(--clr-2);
     font-size: clamp(10px, 2vw, 20px);
     text-align: center;
     border-radius: 10px;
@@ -137,10 +139,10 @@ nav li:first-child a{
 .form-fill input::placeholder{
     text-align: left;
     padding-left: 16px;
-    color: var(--clr-2ndbg);
+    color: var(--clr-3);
 }
 .form-fill input:focus, textarea:focus{
-    background-color: var(--clr-text);
+    background-color: var(--clr-1);
     outline: none;
 }
 .form-fill label{
@@ -154,7 +156,6 @@ nav li:first-child a{
 }
 .form-fill >p{
     font-size: clamp(15px, 2.5vw, 30px);
-    color: var(--clr-text);
 }
 
 .form-fill #fn, #ln, #em {
@@ -162,8 +163,8 @@ nav li:first-child a{
     min-height: 1.5em;
 }
 .form-fill #submit {
-    background-color: var(--clr-3thbg);
-    color: white;
+    background-color: var(--clr-4);
+    color: var(--clr-2);
     width: 8em;
     height: 2em;
     border-radius: 2em;
@@ -183,8 +184,8 @@ input[type="radio"]:checked+label{
     color:var(--clr-3thbg);
 }
 .form-fill #submit:hover {
-    background-color: var(--clr-text);
-    color:var(--clr-2ndbg);
+    background-color: var(--clr-5);
+    color:var(--clr-3);
 
 }
 /* End Contact Form text style and
@@ -218,13 +219,13 @@ input[type="radio"]:checked+label{
 
 
 .contact-personal > h4 {
-    color: var(--clr-text);
+    color: var(--clr-1);
     font-size: clamp(20px, 2.5vw, 40px);
     margin: 5px;
 }
 .contact-personal > h5, p {
     font-size: clamp(10px, 1.5vw, 30px);
-    color: var(--clr-text2);
+    color: var(--clr-2);
 
 }
 
@@ -343,7 +344,7 @@ input[type="radio"]:checked+label{
 .footer_main_container .footer_heading > h4 {
     margin: 0;
     margin-bottom: 20px;
-    color: var(--clr-text);
+    color: var(--clr-2);
 }
 
 /* footer icon style & display property fix */
@@ -353,7 +354,7 @@ input[type="radio"]:checked+label{
     font-size: 30px;
 }
 .footer_main_container .footer_icon ul li a{
-    color:var(--clr-3thbg);
+    color:var(--clr-2);
 }
 /* footer social media icon 
     forground color & vertically center */
@@ -363,7 +364,7 @@ input[type="radio"]:checked+label{
 }
 
 .footer_main_container .footer_icon li .fa-brands:hover {
-    color: var(--clr-text2);
+    color: var(--clr-1);
 }
 
 .footer_main_container .footer_icon p {

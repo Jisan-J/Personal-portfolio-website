@@ -2,13 +2,14 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 :root{
     --clr-text: #dbd8e3;
-    --clr-3thbg:#5c5470; 
-    --clr-2ndbg:#211c2c; 
-    --clr-1stbg:#0b0811;
-    --clr-text2:rgb(237, 165, 49);
+    --clr-3thbg:#1c232c; 
+    --clr-2ndbg:#0f141c; 
+    --clr-1stbg:#0f141c;
+    --clr-text2:#ff4580;
     --clr-selc:#211c2c; 
     --clr-selbg:rgb(78, 128, 127);
 
@@ -32,6 +33,7 @@ nav ul{
     display: flex;
     justify-content:flex-end ;
     align-items: center;
+    padding: 16px;
 
 }
 nav li{
@@ -65,7 +67,7 @@ nav li:first-child a{
     width: 250px;
     border-radius: 20px;
     z-index: 999;
-    background-color: var(--clr-3thbg);
+    background: #070b10dc;
     box-shadow:-10px 0 10px rgba(0, 0, 0, 0.2) ;
     display: none;
     flex-direction: column;
@@ -163,7 +165,7 @@ nav li:first-child a{
 }
 
 .about_container .youtube .about_text > h4{
-    color: rgb(39, 39, 39);
+    color: var(--clr-text);
 }
 .about_container .marketplace .about_text > h4{
     color: rgb(4, 208, 58);
@@ -212,19 +214,18 @@ nav li:first-child a{
     display: inline-block;
     margin: 0 8px;
     font-size: 30px;
+    transition: 1s ease;
 }
 .footer_main_container .footer_icon ul li a{
-    color:var(--clr-3thbg);
+    color:var(--clr-text);
 }
 /* footer social media icon 
-    forground color & vertically center */
+forground color & vertically center */
 .footer_main_container.footer_icon li i {
-    color: var(--clr-3thbg);
-    transition: 0.2s;
+    transition: .5s ease-in-out;
 }
 
-.footer_main_container .footer_icon li .fa-brands:hover {
-    color: var(--clr-text2);
+.footer_main_container .footer_icon li .fa-brands:hover {    color: var(--clr-text2);
 }
 
 .footer_main_container .footer_icon p {
