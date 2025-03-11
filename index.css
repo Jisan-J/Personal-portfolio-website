@@ -443,6 +443,7 @@ nav li:first-child a {
 @media (max-width:450px) {
     .hero-section {
         height: 130vh;
+        
     }
     .hero-area .hero-caption > p {
         font-size: clamp(10px, 2vw, 12px);
