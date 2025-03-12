@@ -113,7 +113,7 @@ nav li:first-child a {
     position: fixed;
     top: 10px;
     right: 10px;
-    height: 96vh;
+    height: 70vh;
     width: 80vw;
     border-radius: 20px;
     z-index: 999;
@@ -399,7 +399,7 @@ nav li:first-child a {
 @media (max-width : 780px) {
 
     .hero-section {
-        height: 180vh;
+        height: 120vh;
         min-height: fit-content;
     }
 
