@@ -129,7 +129,7 @@ nav li:first-child a {
     /* background: #cccccc; */
     display: flex;
     width: 60%;
-    height: 25vh;
+    height: 200px;
     align-items: center;
     margin: 10vh auto auto auto;
     overflow: hidden;
@@ -203,6 +203,13 @@ nav li:first-child a {
     .about_heading{
         display: flex;
         flex-direction: column;
+    }
+
+    .about_material{
+        width: 90%;
+    }
+    .about_material .about_text > p {
+       font-size: clamp(12px, 2vw, 16px);
     }
 }
 

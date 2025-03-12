@@ -9,7 +9,7 @@
     --clr-text: #4e7a94;
     --icon-clr: #99adc0;
     --clr-2ndbg: #1c232c;
-    --body--clr:#0f141c;
+    --body--clr: #0f141c;
     --clr-1stbg: #0b0811;
     --clr-text2: #ff4580;
     --clr-text3: #5e5e5e;
@@ -64,9 +64,9 @@ nav {
     left: 0;
     width: 100%;
     z-index: 999;
-    background: #070b1028; 
-    backdrop-filter: blur(20px); 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: #070b1028;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -169,7 +169,8 @@ nav li:first-child a {
     height: 130vh;
     width: 96vw;
     margin: 1.5% auto;
-    padding-top: 20px; /* approx navbar height অনুযায়ী */
+    padding-top: 20px;
+    /* approx navbar height অনুযায়ী */
     margin-top: 11vh;
 }
 
@@ -210,12 +211,12 @@ nav li:first-child a {
 
 }
 
-.hero-area .hero-caption > h2 {
+.hero-area .hero-caption>h2 {
     color: whitesmoke;
     font-size: clamp(16px, 2vw, 36px);
 }
 
-.hero-area .hero-caption > p {
+.hero-area .hero-caption>p {
     max-width: 300px;
     font-size: clamp(12px, 2vw, 14px);
     color: var(--clr-text4);
@@ -399,7 +400,7 @@ nav li:first-child a {
 @media (max-width : 780px) {
 
     .hero-section {
-        height: 120vh;
+        height: 180vh;
         min-height: fit-content;
     }
 
@@ -453,16 +454,19 @@ nav li:first-child a {
 @media (max-width:450px) {
     .hero-section {
         height: 130vh;
-        
+
     }
-    .hero-area .hero-caption > p {
+
+    .hero-area .hero-caption>p {
         font-size: clamp(10px, 2vw, 12px);
         width: 60%;
     }
+
     .hero-area .hero-main-image>img {
         min-width: 29vw;
     }
-    .hero-area .hero-main-image{
+
+    .hero-area .hero-main-image {
         z-index: 1;
         transform: translateX(25vw);
     }
@@ -532,7 +536,8 @@ nav li:first-child a {
     padding: 20px;
 
 }
-.service-heading-area{
+
+.service-heading-area {
     margin-bottom: 25px;
 }
 
@@ -615,13 +620,14 @@ nav li:first-child a {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
-    
+
     }
+
     .service {
         max-height: 14rem;
         width: 80vw;
     }
-    
+
     .service>p {
         font-size: clamp(12px, 2vw, 14px);
 
@@ -632,8 +638,11 @@ nav li:first-child a {
 
     }
 }
+
 /* ===Services Section Responisve=== END */
 
+/* === Project section design === */
+/* === Project section design END === */
 
 /*==== sevice secltion End====*/
 
