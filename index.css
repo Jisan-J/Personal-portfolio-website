@@ -39,7 +39,7 @@ body {
     height: 300px;
     width: 300px;
     border-radius: 100%;
-    top: 5%;
+    top: 13%;
     right: 5%;
     z-index: -1;
 }
@@ -59,8 +59,16 @@ body {
 
 /*==== Navbar style  ====*/
 nav {
-    margin-right: 20px;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #070b1028; 
+    backdrop-filter: blur(20px); 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
 
 nav ul {
     width: 100%;
@@ -72,8 +80,7 @@ nav ul {
 }
 
 nav li {
-    height: 50px;
-    margin: 5px 10px;
+    margin: 8px 10px;
 }
 
 nav ul li a {
@@ -107,7 +114,7 @@ nav li:first-child a {
     top: 10px;
     right: 10px;
     height: 96vh;
-    width: 250px;
+    width: 80vw;
     border-radius: 20px;
     z-index: 999;
     background: #070b10dc;
@@ -122,10 +129,11 @@ nav li:first-child a {
 
 .sidemenu li {
     width: 100%;
+    margin: 20px 5px;
 }
 
 .sidemenu a {
-    padding: 10px 20px;
+    padding: 12px 20px;
 }
 
 .menubtn {
@@ -161,6 +169,8 @@ nav li:first-child a {
     height: 130vh;
     width: 96vw;
     margin: 1.5% auto;
+    padding-top: 20px; /* approx navbar height অনুযায়ী */
+    margin-top: 11vh;
 }
 
 /*==== hero section photo and heading style ===== */

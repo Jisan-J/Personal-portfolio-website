@@ -26,52 +26,67 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav{
-    margin-right: 20px;
+/*==== Navbar style  ====*/
+nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #070b1028; 
+    backdrop-filter: blur(20px); 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-nav ul{
+
+
+nav ul {
     width: 100%;
     list-style: none;
     display: flex;
-    justify-content:flex-end ;
+    justify-content: flex-end;
     align-items: center;
-    padding: 16px;
-
 
 }
-nav li{
-    height: 50px;
-    margin: 5px 10px; 
+
+nav li {
+    margin: 8px 10px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
-    color:var(--clr-text);
+    color: #d9d1f0;
     font-size: 16px;
     transition: 0.5s;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
+    /* color: var(--clr-text2); */
     color: var(--clr-5);
 }
-nav li:first-child{
-    margin-right:auto;
+
+nav li:first-child {
+    margin-right: auto;
 }
-nav li:first-child a{
+
+nav li:first-child a {
     color: var(--clr-5);
     font-size: 22px;
 
 }
 
+/*=== Navbar style END ====*/
 
-.sidemenu{
+/*==== Mobile side Navbar style ====*/
+.sidemenu {
     position: fixed;
     top: 10px;
     right: 10px;
     height: 96vh;
-    width: 250px;
+    width: 80vw;
     border-radius: 20px;
     z-index: 999;
     background: #070b10dc;
-    box-shadow:-10px 0 10px rgba(0, 0, 0, 0.2) ;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -79,30 +94,37 @@ nav li:first-child a{
     transition: 0.5s;
 
 }
-.sidemenu li{
+
+.sidemenu li {
     width: 100%;
+    margin: 20px 5px;
 }
-.sidemenu a{
-    padding: 10px 20px;
+
+.sidemenu a {
+    padding: 12px 20px;
 }
-.menubtn{
+
+.menubtn {
     display: none;
 }
-@media(max-width:700px){
-    .hideOnmobile{
+
+@media(max-width:700px) {
+    .hideOnmobile {
         display: none;
     }
-    .menubtn{
+
+    .menubtn {
         display: block;
     }
 }
-@media(max-width:400px){
-    .sidemenu{
+
+@media(max-width:400px) {
+    .sidemenu {
         width: 100%;
     }
 }
 
-
+/*=== Mobile side Navbar style END ====*/
 
 .form-section {
     display: flex;
@@ -116,6 +138,9 @@ nav li:first-child a{
     font-size: clamp(30px, 4vw, 50px);
     color: var(--clr-);
     margin: 20px;
+}
+.contact-h{
+    margin-top: 11vh;
 }
 
 /*Contact Form background style  */
